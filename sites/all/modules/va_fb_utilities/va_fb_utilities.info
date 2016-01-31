@@ -1,0 +1,5 @@
+name = "VA Facebook Utilities"
+description = "Various Facebook blocks"
+core = "7.x"
+package = "VA"
+"

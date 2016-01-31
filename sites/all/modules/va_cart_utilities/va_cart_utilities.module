@@ -1,0 +1,56 @@
+<?php
+//this constant is the  label for the ADD TO CART button
+
+//define("CARTTEXT",     "Enrol Now");
+
+
+function va_cart_utilities_block_info() {
+  $blocks['cart_info'] = array(
+    'info' => t('Cart Info'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+
+	return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function  va_cart_utilities_block_view($delta = '') {
+  $block = array();
+  
+  switch ($delta) {
+    case 'cart_info':
+      $block['subject'] = t('Cart Info');
+      $block['content'] = va_cart_info();
+      break;
+	}
+  return $block;
+}
+
+
+function va_cart_info(){
+  $items = uc_cart_get_contents();
+  $total = "";
+    $item_count = 0;
+    if (!empty($items)) {
+    foreach ($items as $item) {
+       $total += ($item->price) * $item->qty;
+       $item_count += $item->qty;
+    }
+
+    return  "<div id='cart_info' class='full'><div class='checkout'><a class='full' href='".base_path()."cart'>Cart/Checkout</a></div><div class='quantity'>".$item_count .format_plural($item_count, ' item', ' items')."</div><div class='price'>$" . number_format( $total , 2)."</div></div>";
+    }
+    else{
+      return  "<div id='cart_info' class='empty'><div class='quantity'>0 items</div></div>";
+    }
+
+
+
+
+
+}
+
+
+
+?>

@@ -1,0 +1,60 @@
+name = Zurb Feature Builder
+description = Zurb Foundation 5 + Feature Builder
+package = Core
+version = VERSION
+core = 7.x
+
+
+stylesheets[all][] = css/zurb.css
+
+scripts[] = js/custom.js
+scripts[] = js/dropdown.js
+scripts[] = js/hoverIntent.js
+scripts[] = js/vendor/custom.modernizr.js
+scripts[] = js/foundation.min.js
+scripts[] = js/scripts.min.js
+
+regions[top] = Top
+regions[header] = Header
+regions[subheader] = Subheader
+regions[help] = Help
+regions[featured] = Featured
+regions[featured_fullwidth] = Featured Fullwidth
+regions[above_content] = Above Content
+regions[sidebar_first] = Sidebar First
+regions[content] = Content
+regions[sidebar_second] = Sidebar Second
+regions[below_content] = Below Content
+regions[canyon] = Canyon
+regions[canyon_fullwidth] = Canyon Fullwidth
+regions[footer] = Footer
+regions[subfooter] = Subfooter
+
+settings[shortcut_module_link] = 0
+
+; Theme settings:
+
+; Top Bar.
+settings[zurbfeaturebuilder_top_bar_enable] = 1
+settings[zurbfeaturebuilder_top_bar_grid] = 0
+settings[zurbfeaturebuilder_top_bar_sticky] = 0
+settings[zurbfeaturebuilder_top_bar_menu_text] = 'Menu'
+settings[zurbfeaturebuilder_top_bar_custom_back_text] = 1
+settings[zurbfeaturebuilder_top_bar_back_text] = 'Back'
+settings[zurbfeaturebuilder_top_bar_is_hover] = 1
+settings[zurbfeaturebuilder_top_bar_scrolltop] = 1
+
+; Tooltips.
+settings[zurbfeaturebuilder_tooltip_enable] = 1
+settings[zurbfeaturebuilder_tooltip_position] = 'top'
+settings[zurbfeaturebuilder_tooltip_mode] = 'text'
+settings[zurbfeaturebuilder_tooltip_text] = 'More information?'
+settings[zurbfeaturebuilder_tooltip_touch] = 0
+
+; Styles and Scripts.
+settings[zurbfeaturebuilder_disable_core_css] = 0
+
+; Misc.
+settings[zurbfeaturebuilder_html_tags] = 1
+settings[zurbfeaturebuilder_messages_modal] = 0
+settings[zurbfeaturebuilder_pager_center] = 1
