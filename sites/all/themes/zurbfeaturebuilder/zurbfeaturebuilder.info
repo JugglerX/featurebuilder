@@ -8,10 +8,11 @@ stylesheets[all][] = css/zurb.css
 
 scripts[] = js/custom.js
 scripts[] = js/dropdown.js
-scripts[] = js/hoverIntent.js
-scripts[] = js/vendor/custom.modernizr.js
+
 scripts[] = js/foundation.min.js
 scripts[] = js/scripts.min.js
+scripts[] = js/vendor/hoverIntent.js
+scripts[] = js/vendor/custom.modernizr.js
 
 regions[top] = Top
 regions[header] = Header
