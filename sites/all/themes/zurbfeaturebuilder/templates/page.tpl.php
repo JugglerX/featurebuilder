@@ -13,7 +13,9 @@
     <div class="layout-header layout">
       <div class="row">
         <div class="medium-12 column">
-          <?php print render($page['header']); ?>
+          <div class="row">
+            <?php print render($page['header']); ?>
+          </div>
         </div>
       </div>
     </div>

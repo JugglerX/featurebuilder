@@ -22,17 +22,17 @@ div.vertical-tabs {
 		padding: 0;
 		border: none;
 		z-index: 100;
-		@include desktop-xl {
+		@media #{$large-up}-xl {
     		right: ((3 * $column-width) + (3 * $gutter)) * -1px;
   		}
-  		@include desktop {
+  		@media #{$large-up} {
     		right: ((3 * $column-width) + (3 * $gutter)) * -1px;
   		}
-		@include ipad {
+		@media #{$medium-only} {
 			top: 306px;
 			right: ((4 * $ipad-column-width) + (4 * $ipad-gutter)) * -1px;
 		}
-		@include mobile {
+		@media #{$small-only} {
 			position: relative;
 			top: 0;
 			right: 0;
@@ -70,7 +70,7 @@ div.vertical-tabs {
 		}
 	}
 	div.vertical-tabs-panes {
-		@include mobile {
+		@media #{$small-only} {
 		}
 	}
 		

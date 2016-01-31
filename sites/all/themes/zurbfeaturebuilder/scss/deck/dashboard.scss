@@ -11,7 +11,7 @@
     color: #FFF;
     margin: 0;
   }
-  @include mobile {
+  @media #{$small-only} {
     width: auto;
   }
 }

@@ -15,7 +15,7 @@
 		margin: 0 6px 0 0;
 		background-size: contain;	
 		list-style: none;	
-		@include ipad {
+		@media #{$medium-only} {
 			margin: 0 10px 10px 0;
 			//width: 20px; 
 			//height: 20px; 

@@ -7,13 +7,13 @@
   margin-bottom: 10px;
   text-align: center;
   min-height: 130px;
-  @include desktop {
+  @media #{$large-up} {
     min-height: 130px;
   }
-  @include desktop-xl {
+  @media #{$large-up}-xl {
     min-height: 200px;
   }
-  @include mobile {
+  @media #{$small-only} {
     width: 23%;
     float: left;
     margin-right: 2%;
@@ -72,7 +72,7 @@
       float: left;
       margin-right: 3%;
       margin-bottom: 0;
-      @include mobile {
+      @media #{$small-only} {
         width: 23%;
         float: left;
         margin-right: 2%
@@ -118,7 +118,7 @@
    clear: both;
    border-top: 1px dashed #CCC;
    padding-top: 20px;
-  @include mobile {
+  @media #{$small-only} {
     clear: both;
   }
 }

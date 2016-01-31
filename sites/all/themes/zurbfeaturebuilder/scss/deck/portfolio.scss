@@ -15,7 +15,7 @@
   @include last(3);
   min-height: 140px;
   overflow: hidden;
-  @include mobile {
+  @media #{$small-only} {
     min-height: 0px;
     border-bottom: 1px solid #EAEAEA;
     margin-bottom: $gutter;

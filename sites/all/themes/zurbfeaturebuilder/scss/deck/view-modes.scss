@@ -49,7 +49,7 @@
 		bottom: 0;
 		left: 0;
 		padding: 14px;
-		@include mobile {
+		@media #{$small-only} {
 			width: 100%;
 		}
 		.field-name-title {
@@ -60,7 +60,7 @@
 				font-size: 18px;
 				text-transform: none;
 				font-weight: 400;
-				@include ipad {
+				@media #{$medium-only} {
 					font-size: 14px;
 				}
 				a{
@@ -83,7 +83,7 @@
 		bottom: 0;
 		left: 0;
 		//padding: 14px;
-		@include mobile {
+		@media #{$small-only} {
 			width: 100%;
 		}
 		.field-name-title {
@@ -92,7 +92,7 @@
 				margin: 0;
 				padding: 7px 14px;
 				font-size: 16px;
-				@include ipad {
+				@media #{$medium-only} {
 					font-size: 14px;
 				}
 				a{

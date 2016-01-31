@@ -118,7 +118,7 @@ input[type="file"] {
 select {
   //width: 160px; // default input width + 10px of padding that doesn't get applied
   background-color: $white;
-  @include mobile {
+  @media #{$small-only} {
     width: auto;
   }
 }

@@ -4,7 +4,6 @@ package = Core
 version = VERSION
 core = 7.x
 
-
 stylesheets[all][] = css/zurb.css
 
 scripts[] = js/custom.js

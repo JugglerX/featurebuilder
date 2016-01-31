@@ -1,0 +1,35 @@
+.block-blockify-blockify-logo {
+  @media #{$medium-up} {
+    @include grid-column(3);
+  }
+  @media #{$small-only} {
+    @include grid-column(12);
+    float: left;
+    padding: 15px 20px 15px 20px;
+  }
+  #logo {
+    float: left;
+    margin: 40px 10px 20px 10px;
+    height: 80px;
+    width: 240px;
+    background-image: url("../images/logo.png"); // logo images in theme root otherwise blockify throws an error
+    background-repeat: no-repeat;
+    background-size: contain;
+    img {
+      display: none;
+    }
+    @media #{$medium-only} {
+      height: 60px;
+      width: 200px;
+      display: inline-block;
+      img {
+        text-align: center;
+      }
+    }
+    @media #{$small-only} {
+      height: 30px;
+      width: 50px;
+      background-image: url("../images/logo-mobile.png"); // logo images in theme root otherwise blockify throws an error
+    }
+  }
+}

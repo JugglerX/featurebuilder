@@ -4,6 +4,7 @@
 @import "settings";
 @import "breakpoints";
 @import "bourbon/bourbon";
+@import "mixins";
 
 @import "foundation/components/grid";
 @import "foundation/components/accordion";
@@ -48,6 +49,14 @@
    ========================================================================== */
 @import "layout/top";
 @import "layout/header";
+@import "layout/footer";
+@import "layout/views";
+
+@import "blocks/block-blockify-logo";
+@import "blocks/block-views-contact";
+@import "blocks/block-menu-block";
+@import "blocks/block-views-homepage-slider";
+@import "blocks/block-views-hero-slideshow";
 //@import "deck/breadcrumbs";
 //@import "deck/tables";
 //@import "deck/contact";

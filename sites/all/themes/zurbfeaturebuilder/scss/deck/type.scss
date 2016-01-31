@@ -7,7 +7,7 @@ p {
 	font-size: $body-font-familysize;
 	line-height: $baselineheight; 
 	margin: 0 0 20px 0; 
-	@include ipad {
+	@media #{$medium-only} {
 		font-size: $body-font-familysize - 2;
 	}
 }
@@ -32,10 +32,10 @@ h1	{
 	color: $customfontcolor;
 	padding: 0; 
 	margin: 0 0 20px 0; 
-	@include ipad {
+	@media #{$medium-only} {
 		font-size: 32px;
 	}
-	@include mobile {
+	@media #{$small-only} {
 		font-size: 30px;
 	}
 }
@@ -49,10 +49,10 @@ h2	{
 	padding: 0; 
 	margin: 0 0 10px 0; 
 	//text-transform: uppercase;
-	@include ipad {
+	@media #{$medium-only} {
 		font-size: 28px;
 	}
-	@include mobile {
+	@media #{$small-only} {
 		font-size: 22px;
 	}
 }

@@ -12,11 +12,11 @@
 
 .content {
     .view-header {
-        @include grid();
+        //@include grid();
     }
 }
 .view-filters {
-    margin-bottom: ($gutter * 2);
+    margin-bottom: 20px;
 }
 .views-exposed-widget {
 }
@@ -33,15 +33,15 @@
 }
 .view-footer{
     a { 
-        @include btn(); 
-        @include btn-primary(); 
-        @include btn-large(); 
+        //@include btn();
+        //@include btn-primary();
+        //@include btn-large();
     }
 }
 .view-empty {
     p {
         text-align: center;
-        @include h1();
+        //@include h1();
     }
 }
 

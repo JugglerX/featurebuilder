@@ -1,15 +1,4 @@
-/* ==========================================================================
-   Slide Content Type & Fullwidth Video
-   ========================================================================== */
-
-
-/* 
-   View Using Display Suite Teaser Code Fields
-   ========================================================================== */
-.region-featured-fullwidth{
-	//height: 600px;
-}
-#block-views-homepage-slider-block-1 {
+.block-views-homepage-slider-block-1 {
 	//margin-bottom: 0 !important;
 	overflow: hidden;
 	background: #000;
@@ -109,10 +98,8 @@
 		}
 	}
 	a.button-link{ // in code field
-		@include btn(); .btn-large(); .btn-primary();
 		float: right;
 		@media #{$medium-only} {
-			//width: 260px;
 			font-size: 14px;
 			line-height: 24px;
 			padding: 8px 15px;
@@ -137,8 +124,7 @@
 }
 
 
-
-/* 
+/*
    View Using View Fields
    ========================================================================== */
 .view-homepage-slider.view-display-id-block_0 {
@@ -151,7 +137,7 @@
 			display: none;
 		}
 	}
-	
+
 	.views-field-field-hero-image {
 
 	}
@@ -163,7 +149,7 @@
 		height: 200px;
 		text-align: center;
 		.field-content {
-			margin: 0 auto;			
+			margin: 0 auto;
 			width: auto;
 			color: #FFF;
 			font-size: 46px;
@@ -178,10 +164,10 @@
 			div.field-item {
 				width: auto;
 				padding: 0 20px;
-				h1, 
-				h2 { 
-				font-size: 32px;
-				line-height: 40px;
+				h1,
+				h2 {
+					font-size: 32px;
+					line-height: 40px;
 				}
 			}
 		}
@@ -213,7 +199,7 @@
 			div.field-item {
 				width: auto;
 				padding: 0 30px;
-				h1, 
+				h1,
 				h2 {
 					width: auto;
 					font-size: 18px;
@@ -262,5 +248,3 @@
 		}
 	}
 }
-
-

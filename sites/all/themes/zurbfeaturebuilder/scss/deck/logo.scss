@@ -1,6 +1,6 @@
-#block-blockify-blockify-logo {
+.block-blockify-blockify-logo {
 	@include grid(3);
-	@include mobile {
+	@media #{$small-only} {
 		float: left;
 		padding: 15px 20px 15px 20px;
 	}
@@ -10,7 +10,7 @@
 		img {
 			display: none;
 		}
-		@include mobile {
+		@media #{$small-only} {
 			display: inline-block;
 			img {
 				text-align: center;
@@ -28,11 +28,11 @@
 	img {
 		display: none;
 	}
-	@include ipad {
+	@media #{$medium-only} {
 		height: 60px;
 		width: 200px;
 	}
-	@include mobile {
+	@media #{$small-only} {
 		height: 30px;
 		width: 50px;
 		background-image: url("../images/logo-mobile.png"); // logo images in theme root otherwise blockify throws an error

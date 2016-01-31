@@ -2,7 +2,7 @@
 .wrapper   { 
 	padding-top: 81px;
 	position: relative;
-	@include mobile {
+	@media #{$small-only} {
 		padding-top: 0px;
 	}
 }
@@ -17,7 +17,7 @@
 		    top: 98px;
 	   }
 	}
-	@include mobile {
+	@media #{$small-only} {
 		.wrapper {
 			.layout-header  { 
 			    top: 0px;
@@ -29,7 +29,7 @@
 .wrapper   { 
 	padding-top: 81px;
 	position: relative;
-	@include mobile {
+	@media #{$small-only} {
 		padding-top: 0px;
 	}
 }
@@ -38,7 +38,7 @@
 	z-index: 500;
 	position: fixed;
 	top: 0;
-	@include mobile {
+	@media #{$small-only} {
 		position: relative;
 	}
 }
@@ -48,7 +48,7 @@
 	position: fixed;
 	top: 36px;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.26);
-	@include mobile {
+	@media #{$small-only} {
 		position: relative;
 		top: 0;
 	}

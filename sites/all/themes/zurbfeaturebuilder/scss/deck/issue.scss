@@ -19,10 +19,10 @@
       position: relative;
       // z-index: 1;
       margin-bottom: 8px;
-        @include ipad {
+        @media #{$medium-only} {
           height: 130px;
         }
-        @include mobile {
+        @media #{$small-only} {
           height: 140px;
         }
     }
@@ -35,7 +35,7 @@
     border-bottom: none;
   }
 
-  @include mobile {
+  @media #{$small-only} {
     min-height: 200px;
     border-top: none;
     border-bottom: 1px solid #CCC;
@@ -81,7 +81,7 @@
     font-weight: 700;
   }
   float:left;
-    @include mobile {
+    @media #{$small-only} {
       // width: 45%;
     }
 }
@@ -94,7 +94,7 @@
   display: inline;
   float:left;
   margin-left: 3px;
-    @include mobile {
+    @media #{$small-only} {
       // width: 45%;
     }
 }
@@ -104,7 +104,7 @@
   top: 10px;
   left: 10px;
   z-index: 200;
-    @include mobile {
+    @media #{$small-only} {
 
     }
 }
