@@ -3,7 +3,7 @@
 @import "reset";
 @import "settings";
 @import "breakpoints";
-@import "bourbon/bourbon";
+//@import "bourbon/bourbon";
 @import "mixins";
 
 @import "foundation/components/grid";
@@ -53,34 +53,11 @@
 @import "layout/views";
 
 @import "blocks/block-blockify-logo";
+@import "blocks/block-va-social";
 @import "blocks/block-views-contact";
 @import "blocks/block-menu-block";
 @import "blocks/block-views-homepage-slider";
 @import "blocks/block-views-hero-slideshow";
-//@import "deck/breadcrumbs";
-//@import "deck/tables";
-//@import "deck/contact";
-//@import "deck/forms";
-//@import "deck/buttons";
-//@import "deck/alerts";
-//@import "deck/comments";
-//@import "deck/blog";
-//@import "deck/author";
-//@import "deck/social";
-//@import "deck/pager";
-//@import "deck/logo";
-//@import "deck/type";
-//@import "deck/menu-menublock";
-//@import "deck/menu-responsive-meanmenu";
-//@import "deck/menu-responsive-simple";
-//@import "deck/views-homepage-slider";
-//@import "deck/views-hero-slideshow";
-//@import "deck/verticaltabs";
-//@import "deck/owlcarousel";
-//@import "deck/headline";
-//@import "deck/card";
-//@import "deck/tile";
-//@import "deck/row";
 
 // @import "fontawesome/scss/font-awesome";
 
