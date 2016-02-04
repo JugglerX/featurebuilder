@@ -486,7 +486,12 @@ $cursor-text-value: text !default;
   @if $include-html-global-classes {
 
     // Must be 100% for off canvas to work
-    html, body { height: 100%; }
+    html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-size: $base-font-size;
+    }
 
     // Set box-sizing globally to handle padding and border widths
     *,
@@ -495,14 +500,13 @@ $cursor-text-value: text !default;
       @include box-sizing(border-box);
     }
 
-    html,
-    body { font-size: $base-font-size; }
-
     // Default body styles
     body {
+      height: 100%;
       background: $body-bg;
       color: $body-font-color;
       cursor: $cursor-auto-value;
+      font-size: $base-font-size;
       font-family: $body-font-family;
       font-style: $body-font-style;
       font-weight: $body-font-weight;

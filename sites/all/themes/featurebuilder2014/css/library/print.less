@@ -1,0 +1,45 @@
+@media print {
+	body {padding-top:0 !important; }
+	#overlay-disable-message,
+	#toolbar,
+	.layout,
+	.view-footer{
+		display: none;
+	}
+	.layout-middle{
+		display: block;
+		margin: 0;
+		background: red;
+	}
+	.view-print-orders{
+		padding: 0;
+	}
+	.logged-in .view-inner{
+		padding: 0;
+		//background: red;
+	}
+    .entity-commerce-order {
+    	padding: 40px;
+    	page-break-after: always;
+    }
+}
+
+
+.view-print-orders{
+	.view-header{
+		h2{
+			float: left;
+		}
+		p{
+			float: right;
+			text-align: right;
+		}
+	}
+	.views-field-nothing{ // custom text
+		display: block;
+		border-bottom: 4px solid #333;
+		padding: 0 0 10px 0;
+		font-size: 14px;
+		font-weight: 700;
+	}
+}

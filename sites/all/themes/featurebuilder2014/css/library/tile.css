@@ -1,0 +1,12 @@
+.node.view-mode-tile .group-top .field-name-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.node.view-mode-tile .group-top .field-name-title h1,
+.node.view-mode-tile .group-top .field-name-title h2 {
+  color: #FFF;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}

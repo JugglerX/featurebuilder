@@ -1,0 +1,59 @@
+// Social Media
+#block-va-social-social-icons {
+	.grid(4);
+	margin: 7px 0 7px 0;
+	&.block {
+		float: right;
+		@media @mobile {
+			float: none;
+			display: none;
+		}				
+	}
+}
+
+.layout-top { 
+    #block-va-social-social-icons {
+		.float-right();
+	}
+}
+
+#block-va-social-social-icons {
+	background: none !important;
+}
+
+.socialmedia {
+	@iconsize: 24px;
+	.clearfix();
+	margin: 0 0 0 0;
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+	li {
+		float: left;
+		width: @iconsize; 
+		height: @iconsize; 
+		margin: 0 5px 0 0;
+		background-size: contain;	
+		list-style: none;	
+	}
+	a {
+		width: @iconsize; 
+		height: @iconsize; 
+		cursor: pointer;
+		padding: 0; 		
+		float: left;
+		.img-glow();
+		
+	}	
+
+	.facebook 	{ background-image: url('../images/social/flat/facebook.png'); background-repeat: no-repeat; }
+	.twitter 	{ background-image: url('../images/social/flat/twitter.png'); background-repeat: no-repeat; }
+	.rss 		{ background-image: url('../images/social/flat/rss.png'); background-repeat: no-repeat; }
+	.vimeo		{ background-image: url('../images/social/flat/vimeo.png'); background-repeat: no-repeat; }
+	.linkedin 	{ background-image: url('../images/social/flat/linkedin.png'); background-repeat: no-repeat; }
+	.youtube 	{ background-image: url('../images/social/flat/youtube.png'); background-repeat: no-repeat; }
+	.instagram 	{ background-image: url('../images/social/flat/instagram.png'); background-repeat: no-repeat; }
+	.pinterest 	{ background-image: url('../images/social/flat/pinterest.png'); background-repeat: no-repeat; }
+	.googleplus	{ background-image: url('../images/social/flat/gplus.png'); background-repeat: no-repeat; }
+}

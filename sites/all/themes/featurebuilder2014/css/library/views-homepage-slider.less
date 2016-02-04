@@ -1,0 +1,381 @@
+/* ==========================================================================
+   Slide Content Type & Fullwidth Video
+   ========================================================================== */
+
+
+/* 
+   View Using Display Suite Teaser Code Fields
+   ========================================================================== */
+.view-homepage-slider {
+	overflow: hidden;
+	margin-bottom: 0 !important;
+	.ds-1col {
+		margin-left: 0; 
+	}
+	.group-slider {
+		.absolute-center();
+		width: 600px;
+		height: 200px;
+		text-align: center;
+		@media @ipad {
+			width: 400px;
+		}
+		@media @mobile {
+			width: 300px;
+		}
+	}
+	
+	.field-name-title {
+		color: #FFF;
+		margin-bottom: 20px;
+		.field-item {
+			h1, 
+			h2 {
+				margin: 0 auto;			
+				width: auto;
+				color: #FFF;
+				font-size: 46px;
+				line-height: 50px;
+				.text-shadow();
+				@media @ipad {
+					font-size: 36px;
+					line-height: 40px;
+				}
+				@media @mobile {
+					font-size: 26px;
+					line-height: 30px;
+				}
+			}
+			a {
+				color: #FFF;
+			}
+		}
+	}
+	.field-name-cf-slide-elements, in code field
+	.field-name-body {
+		color: #FFF;
+		h1, 
+		h2 {
+			margin: 0 auto;			
+			width: auto;
+			color: #FFF;
+			font-size: 46px;
+			line-height: 50px;
+			.text-shadow();
+			@media @ipad {
+				font-size: 36px;
+				line-height: 40px;
+			}
+			@media @mobile {
+				font-size: 26px;
+				line-height: 30px;
+			}
+		}
+		a {
+			color: #FFF;
+		}
+		p {
+			color: #FFF;
+			font-size: 18px;
+			line-height: 22px;
+			color: #FFF;
+			font-weight: 300;
+			.text-shadow();
+			@media @ipad {
+				font-size: 16px;
+				line-height: 20px;
+			}
+			@media @mobile {
+				font-size: 14px;
+				line-height: 16px;
+			}
+		}
+	}
+	a.button-link{ // in code field
+		display: inline-block;
+		width: 320px;
+		text-align: center;
+		font-size: 14px;
+		line-height: 24px;
+		color: #FFF;
+		font-weight: 300;
+		border: 3px solid #FFF;
+		padding: 10px 30px 10px 30px;
+		text-transform: uppercase;
+		a {
+			color: #FFF;
+			font-weight: 400;
+		}
+		@media @ipad {
+			width: 260px;
+			font-size: 14px;
+			line-height: 24px;
+			padding: 8px 15px;
+		}
+		@media @mobile {
+			width: 200px;
+			font-size: 14px;
+			line-height: 24px;
+			padding: 6px 12px;
+		}
+	}
+}
+
+
+
+/* 
+   View Using View Fields
+   ========================================================================== */
+.view-homepage-slider.view-display-id-block_0 {
+	overflow: hidden;
+	margin-bottom: 0 !important;
+
+	.field-name-field-video-embed,
+	.views-field-field-video-embed {
+		@media @mobile {
+			display: none;
+		}
+	}
+	
+	.views-field-field-hero-image {
+
+	}
+	.views-field-title {
+		color: #FFF;
+		z-index: 31;
+		.absolute-center();
+		width: 600px;
+		height: 200px;
+		text-align: center;
+		.field-content {
+			margin: 0 auto;			
+			width: auto;
+			color: #FFF;
+			font-size: 46px;
+			line-height: 50px;
+			.text-shadow();
+			a {
+				color: #FFF;
+			}
+		}
+		@media @mobile {
+			top: 60px;
+			div.field-item {
+				width: auto;
+				padding: 0 20px;
+				h1, 
+				h2 { 
+				font-size: 32px;
+				line-height: 40px;
+				}
+			}
+		}
+	}
+
+	.views-field-body {
+		color: #FFF;
+		z-index: 31;
+		.absolute-center();
+		width: 400px;
+		height: 200px;
+		text-align: center;
+		top: 160px;
+		.field-content {
+			margin: 0 auto;
+			text-align: center;
+			font-size: 18px;
+			line-height: 22px;
+			color: #FFF;
+			font-weight: 300;
+			.text-shadow();
+			p {
+				color: #FFF;
+			}
+		}
+
+		@media @mobile {
+			top: 160px;
+			div.field-item {
+				width: auto;
+				padding: 0 30px;
+				h1, 
+				h2 {
+					width: auto;
+					font-size: 18px;
+					.text-shadow();
+				}
+			}
+		}
+	}
+
+	.views-field-field-link {
+		.absolute-center();
+		width: 400px;
+		height: 200px;
+		top: 300px;
+		text-align: center;
+		.field-content {
+			margin: 0 auto;
+			width: 320px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 24px;
+			color: #FFF;
+			font-weight: 300;
+			border: 3px solid #FFF;
+			padding: 10px 30px 10px 30px;
+			text-transform: uppercase;
+			a {
+				color: #FFF;
+				font-weight: 400;
+			}
+		}
+	}
+
+	// Create a Code Field called Overlay-CF
+	.views-field-field-overlay-cf {
+		position: absolute;
+		color: #FFF;
+		width: 100%;
+		height: 100%;
+		z-index: 30;
+		font-size: 1px;
+		// background: url('../images/dark_stripes.png');
+		opacity: 0.8;
+		p {
+			font-size: 1px;
+		}
+	}
+}
+
+
+
+
+/* 
+   View Using Display Suite Teaser instead of Fields
+   ========================================================================== */
+.view-homepage-slider {
+	overflow: hidden;
+	margin-bottom: 0 !important;
+	.ds-1col {
+		margin-left: 0; 
+	}
+	.group-slider {
+		.absolute-center();
+		width: 600px;
+		height: 200px;
+		text-align: center;
+		@media @ipad {
+			width: 400px;
+		}
+		@media @mobile {
+			width: 300px;
+		}
+	}
+	
+	.field-name-title {
+		color: #FFF;
+		margin-bottom: 20px;
+		.field-item {
+			h1, 
+			h2 {
+				margin: 0 auto;			
+				width: auto;
+				color: #FFF;
+				font-size: 46px;
+				line-height: 50px;
+				.text-shadow();
+				@media @ipad {
+					font-size: 36px;
+					line-height: 40px;
+				}
+				@media @mobile {
+					font-size: 26px;
+					line-height: 30px;
+				}
+			}
+			a {
+				color: #FFF;
+			}
+		}
+	}
+	.field-name-cf-slide-elements, in code field
+	.field-name-body {
+		color: #FFF;
+		.field-item {
+			h1, 
+			h2 {
+				margin: 0 auto;			
+				width: auto;
+				color: #FFF;
+				font-size: 46px;
+				line-height: 50px;
+				.text-shadow();
+				@media @ipad {
+					font-size: 36px;
+					line-height: 40px;
+				}
+				@media @mobile {
+					font-size: 26px;
+					line-height: 30px;
+				}
+			}
+			a {
+				color: #FFF;
+			}
+			p {
+				color: #FFF;
+				font-size: 18px;
+				line-height: 22px;
+				color: #FFF;
+				font-weight: 300;
+				.text-shadow();
+				@media @ipad {
+					font-size: 16px;
+					line-height: 20px;
+				}
+				@media @mobile {
+					font-size: 14px;
+					line-height: 16px;
+				}
+			}
+		}
+	}
+
+	.field-name-field-link {
+		text-align: center;
+
+		.field-item {
+			display: inline-block;
+			width: 320px;
+			text-align: center;
+			font-size: 14px;
+			line-height: 24px;
+			color: #FFF;
+			font-weight: 300;
+			border: 3px solid #FFF;
+			padding: 10px 30px 10px 30px;
+			text-transform: uppercase;
+			a {
+				color: #FFF;
+				font-weight: 400;
+			}
+			@media @ipad {
+				width: 260px;
+				font-size: 14px;
+				line-height: 24px;
+				padding: 8px 15px;
+			}
+			@media @mobile {
+				width: 200px;
+				font-size: 14px;
+				line-height: 24px;
+				padding: 6px 12px;
+			}
+		}
+	}
+}
+
+
+
+

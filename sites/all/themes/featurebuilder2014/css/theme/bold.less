@@ -1,0 +1,57 @@
+@primary:		@primary-500;
+@primary-100:	#C5CAE9;
+@primary-500:	#3F51B5;
+@primary-700:	#303F9F;
+
+
+@primary:		@primary-500;
+@primary-100:	#C5CAE9;
+@primary-500:	#3F51B5;
+@primary-700:	#303F9F;
+
+
+/*
+.layout-header {
+	background-color: @primary-500;
+	border: none;
+}
+
+.layout-top {
+	background-color: @primary-700;
+	border: none;
+}
+*/
+
+.region-top .block-menu-block, 
+.region-header .block-menu-block,
+.region-subheader .block-menu-block {
+	ul.menu {
+		text-transform: uppercase;
+		font-weight: 700;
+		li {	
+			a {
+				padding: 15px;
+				display: block;
+				background: none;
+				color: @primary-700;				
+				&:hover { 
+					color: @primary-700;
+					text-decoration: underline;
+				}
+				&.active {
+					color: @primary-700;
+					text-decoration: underline;
+				}
+				
+			}
+			// Special Menu Items
+			span {
+				padding: 15px;
+				display: block;
+				background: none;
+				color: @primary-700;	
+				cursor: context-menu;	
+			}
+		}
+	}
+}

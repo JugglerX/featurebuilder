@@ -1,6 +1,6 @@
 /* CSS Mini Reset */
 /* line 3, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/_reset.scss */
-html, body, div, form, fieldset, legend, label {
+form, fieldset, legend, label {
   margin: 0;
   padding: 0;
 }
@@ -126,11 +126,14 @@ meta.foundation-data-attribute-namespace {
 }
 
 /* line 489, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
-html, body {
+html {
+  margin: 0;
+  padding: 0;
   height: 100%;
+  font-size: 100%;
 }
 
-/* line 492, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 497, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 *,
 *:before,
 *:after {
@@ -139,17 +142,13 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 498, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
-html,
+/* line 504, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 body {
-  font-size: 100%;
-}
-
-/* line 502, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
-body {
+  height: 100%;
   background: #fff;
   color: #222;
   cursor: auto;
+  font-size: 100%;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -159,23 +158,23 @@ body {
   position: relative;
 }
 
-/* line 515, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 519, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 a:hover {
   cursor: pointer;
 }
 
-/* line 518, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 522, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 520, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 524, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 img {
   -ms-interpolation-mode: bicubic;
 }
 
-/* line 525, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 529, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 #map_canvas img,
 #map_canvas embed,
 #map_canvas object,
@@ -188,12 +187,12 @@ img {
   max-width: none !important;
 }
 
-/* line 532, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 536, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 .left {
   float: left !important;
 }
 
-/* line 533, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 537, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 .right {
   float: right !important;
 }
@@ -209,35 +208,35 @@ img {
   clear: both;
 }
 
-/* line 537, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 541, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 .hide {
   display: none;
 }
 
-/* line 542, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 546, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 .invisible {
   visibility: hidden;
 }
 
-/* line 548, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 552, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 551, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 555, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 img {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 561, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 565, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 textarea {
   height: auto;
   min-height: 50px;
 }
 
-/* line 564, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+/* line 568, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
 select {
   width: 100%;
 }
@@ -8414,7 +8413,6 @@ meta.foundation-mq-topbar {
 
 /* Typography resets */
 /* line 196, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
-div,
 dl,
 dt,
 dd,
@@ -8438,25 +8436,25 @@ td {
 }
 
 /* Default Link Styles */
-/* line 220, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 219, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 a {
   color: #008CBA;
   line-height: inherit;
   text-decoration: none;
 }
 
-/* line 225, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 224, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 a:hover, a:focus {
   color: #0078a0;
 }
 
-/* line 233, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 232, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 a img {
   border: none;
 }
 
 /* Default paragraph styles */
-/* line 237, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 236, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 p {
   font-family: inherit;
   font-size: 1rem;
@@ -8466,13 +8464,13 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-/* line 245, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 244, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 p.lead {
   font-size: 1.21875rem;
   line-height: 1.6;
 }
 
-/* line 247, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 246, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 p aside {
   font-size: 0.875rem;
   font-style: italic;
@@ -8480,7 +8478,7 @@ p aside {
 }
 
 /* Default header styles */
-/* line 255, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 254, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -8492,44 +8490,44 @@ h1, h2, h3, h4, h5, h6 {
   text-rendering: optimizeLegibility;
 }
 
-/* line 265, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 264, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   color: #6f6f6f;
   font-size: 60%;
   line-height: 0;
 }
 
-/* line 272, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 271, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 h1 {
   font-size: 2.125rem;
 }
 
-/* line 273, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 272, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 h2 {
   font-size: 1.6875rem;
 }
 
-/* line 274, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 273, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 h3 {
   font-size: 1.375rem;
 }
 
-/* line 275, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 274, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 h4 {
   font-size: 1.125rem;
 }
 
-/* line 276, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 275, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 h5 {
   font-size: 1.125rem;
 }
 
-/* line 277, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 276, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 h6 {
   font-size: 1rem;
 }
 
-/* line 279, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 278, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 .subheader {
   line-height: 1.4;
   color: #6f6f6f;
@@ -8538,7 +8536,7 @@ h6 {
   margin-bottom: 0.5rem;
 }
 
-/* line 281, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 280, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 hr {
   border: solid #DDDDDD;
   border-width: 1px 0 0;
@@ -8548,27 +8546,27 @@ hr {
 }
 
 /* Helpful Typography Defaults */
-/* line 290, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 289, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 em,
 i {
   font-style: italic;
   line-height: inherit;
 }
 
-/* line 296, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 295, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 strong,
 b {
   font-weight: bold;
   line-height: inherit;
 }
 
-/* line 302, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 301, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 small {
   font-size: 60%;
   line-height: inherit;
 }
 
-/* line 307, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 306, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 code {
   background-color: #f8f8f8;
   border-color: #dfdfdf;
@@ -8581,7 +8579,7 @@ code {
 }
 
 /* Lists */
-/* line 319, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 318, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ul,
 ol,
 dl {
@@ -8592,62 +8590,62 @@ dl {
   margin-bottom: 1.25rem;
 }
 
-/* line 329, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 328, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ul {
   margin-left: 1.1rem;
 }
 
 /* Unordered Lists */
-/* line 336, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 335, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ul li ul,
 ul li ol {
   margin-left: 1.25rem;
   margin-bottom: 0;
 }
 
-/* line 345, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 344, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ul.square li ul, ul.circle li ul, ul.disc li ul {
   list-style: inherit;
 }
 
-/* line 348, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 347, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ul.square {
   list-style-type: square;
   margin-left: 1.1rem;
 }
 
-/* line 349, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 348, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ul.circle {
   list-style-type: circle;
   margin-left: 1.1rem;
 }
 
-/* line 350, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 349, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ul.disc {
   list-style-type: disc;
   margin-left: 1.1rem;
 }
 
 /* Ordered Lists */
-/* line 354, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 353, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 357, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 356, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 ol li ul,
 ol li ol {
   margin-left: 1.25rem;
   margin-bottom: 0;
 }
 
-/* line 366, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 365, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 .no-bullet {
   list-style-type: none;
   margin-left: 0;
 }
 
-/* line 371, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 370, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 .no-bullet li ul,
 .no-bullet li ol {
   margin-left: 1.25rem;
@@ -8656,19 +8654,19 @@ ol li ol {
 }
 
 /* Definition Lists */
-/* line 382, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 381, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 dl dt {
   margin-bottom: 0.3rem;
   font-weight: bold;
 }
 
-/* line 386, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 385, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 dl dd {
   margin-bottom: 0.75rem;
 }
 
 /* Abbreviations */
-/* line 390, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 389, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 abbr,
 acronym {
   text-transform: uppercase;
@@ -8677,43 +8675,43 @@ acronym {
   cursor: help;
 }
 
-/* line 397, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 396, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 abbr {
   text-transform: none;
 }
 
-/* line 399, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 398, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 abbr[title] {
   border-bottom: 1px dotted #DDDDDD;
 }
 
 /* Blockquotes */
-/* line 405, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 404, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 blockquote {
   margin: 0 0 1.25rem;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #DDDDDD;
 }
 
-/* line 410, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 409, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 blockquote cite {
   display: block;
   font-size: 0.8125rem;
   color: #555555;
 }
 
-/* line 414, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 413, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 blockquote cite:before {
   content: "\2014 \0020";
 }
 
-/* line 418, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 417, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 blockquote cite a,
 blockquote cite a:visited {
   color: #555555;
 }
 
-/* line 424, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 423, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 blockquote,
 blockquote p {
   line-height: 1.6;
@@ -8721,7 +8719,7 @@ blockquote p {
 }
 
 /* Microformats */
-/* line 431, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 430, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 .vcard {
   display: inline-block;
   margin: 0 0 1.25rem 0;
@@ -8729,24 +8727,24 @@ blockquote p {
   padding: 0.625rem 0.75rem;
 }
 
-/* line 437, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 436, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 .vcard li {
   margin: 0;
   display: block;
 }
 
-/* line 441, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 440, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 .vcard .fn {
   font-weight: bold;
   font-size: 0.9375rem;
 }
 
-/* line 448, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 447, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 .vevent .summary {
   font-weight: bold;
 }
 
-/* line 450, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+/* line 449, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
 .vevent abbr {
   cursor: default;
   text-decoration: none;
@@ -8756,31 +8754,31 @@ blockquote p {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 461, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 460, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   h1, h2, h3, h4, h5, h6 {
     line-height: 1.4;
   }
-  /* line 462, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 461, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   h1 {
     font-size: 2.75rem;
   }
-  /* line 463, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 462, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   h2 {
     font-size: 2.3125rem;
   }
-  /* line 464, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 463, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   h3 {
     font-size: 1.6875rem;
   }
-  /* line 465, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 464, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   h4 {
     font-size: 1.4375rem;
   }
-  /* line 466, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 465, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   h5 {
     font-size: 1.125rem;
   }
-  /* line 467, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 466, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   h6 {
     font-size: 1rem;
   }
@@ -8793,7 +8791,7 @@ blockquote p {
        * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
       */
 @media print {
-  /* line 479, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 478, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   * {
     background: transparent !important;
     color: #000000 !important;
@@ -8801,56 +8799,56 @@ blockquote p {
     box-shadow: none !important;
     text-shadow: none !important;
   }
-  /* line 486, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 485, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   a,
   a:visited {
     text-decoration: underline;
   }
-  /* line 488, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 487, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   a[href]:after {
     content: " (" attr(href) ")";
   }
-  /* line 490, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 489, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
-  /* line 493, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 492, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
-  /* line 497, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 496, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   pre,
   blockquote {
     border: 1px solid #999999;
     page-break-inside: avoid;
   }
-  /* line 503, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 502, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
-  /* line 505, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 504, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   tr,
   img {
     page-break-inside: avoid;
   }
-  /* line 508, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 507, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   img {
     max-width: 100% !important;
   }
   @page {
     margin: 0.34in;
   }
-  /* line 512, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 511, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
-  /* line 519, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
+  /* line 518, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_type.scss */
   h2,
   h3 {
     page-break-after: avoid;
@@ -10287,13 +10285,14 @@ th.hide-for-touch {
 /* line 1, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/layout/_top.scss */
 .layout-top {
   background: #FFF;
+  border-bottom: 1px solid #CCC;
 }
 
 /* line 1, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/layout/_header.scss */
 .layout-header {
   border-bottom: 1px solid #EAEAEA;
-  margin-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background: #FFF;
 }
 
@@ -10431,46 +10430,36 @@ th.hide-for-touch {
     padding-right: 0.9375rem;
     width: 100%;
     float: left;
-    float: left;
-    padding: 15px 20px 15px 20px;
   }
 }
 
-/* line 10, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
+/* line 8, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
 .block-blockify-blockify-logo #logo {
-  float: left;
-  margin: 40px 10px 20px 10px;
-  height: 80px;
-  width: 240px;
-  background-image: url("../images/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
+  display: block;
 }
 
-/* line 18, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
+/* line 12, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
 .block-blockify-blockify-logo #logo img {
   display: none;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 10, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
+@media only screen and (min-width: 768px) {
+  /* line 8, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
   .block-blockify-blockify-logo #logo {
-    height: 60px;
-    width: 200px;
-    display: inline-block;
-  }
-  /* line 25, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
-  .block-blockify-blockify-logo #logo img {
-    text-align: center;
+    background-image: url("../images/logo.png");
+    width: 100px;
+    height: 40px;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 10, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
+  /* line 8, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-blockify-logo.scss */
   .block-blockify-blockify-logo #logo {
+    background-image: url("../images/logo-mobile.png");
     height: 30px;
     width: 50px;
-    background-image: url("../images/logo-mobile.png");
   }
 }
 
@@ -10691,7 +10680,9 @@ th.hide-for-touch {
 
 /* line 4, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu {
-  font-weight: 700;
+  background: #FFF;
+  margin: 0;
+  font-weight: 500;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -10701,7 +10692,18 @@ th.hide-for-touch {
   padding: 0;
 }
 
-/* line 13, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 239, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+.block-menu-block ul.menu:before, .block-menu-block ul.menu:after {
+  content: " ";
+  display: table;
+}
+
+/* line 240, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+.block-menu-block ul.menu:after {
+  clear: both;
+}
+
+/* line 16, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li {
   float: left;
   display: block;
@@ -10710,41 +10712,42 @@ th.hide-for-touch {
   line-height: 2.2;
 }
 
-/* line 20, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 22, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li:first-child a {
   padding-left: 0;
 }
 
-/* line 23, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 25, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li a {
+  padding: 5px 14px;
   display: block;
   background: none;
   color: #008CBA;
 }
 
-/* line 29, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 31, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li a:hover {
   color: #008CBA;
   text-decoration: underline;
 }
 
-/* line 33, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 35, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li a.active {
   color: #008CBA;
   text-decoration: underline;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 23, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+  /* line 25, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
   .block-menu-block ul.menu li a {
     padding: 2px 6px;
     font-size: 13px;
   }
 }
 
-/* line 43, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 45, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li span {
-  padding: 10px 18px;
+  padding: 5px 14px;
   display: block;
   background: none;
   color: #008CBA;
@@ -10752,25 +10755,25 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 43, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+  /* line 45, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
   .block-menu-block ul.menu li span {
     padding: 2px 6px;
     font-size: 13px;
   }
 }
 
-/* line 56, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 58, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li.expanded ul {
   padding: 14px 7px;
   margin: 0;
 }
 
-/* line 60, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 62, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li.expanded ul li {
   text-transform: capitalize;
 }
 
-/* line 62, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 64, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li.expanded ul li a {
   margin: 0 0 7px 0;
   padding: 5px 10px;
@@ -10779,18 +10782,18 @@ th.hide-for-touch {
   color: #ccc;
 }
 
-/* line 68, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 70, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li.expanded ul li a:hover {
   color: #fff;
 }
 
-/* line 76, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 78, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .block-menu-block ul.menu li.expanded ul ul li a {
   text-indent: 20px;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 87, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+  /* line 89, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
   .layout-header .block-menu-block {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
@@ -10799,7 +10802,7 @@ th.hide-for-touch {
   }
 }
 
-/* line 98, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 100, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu {
   font-weight: 400;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -10809,57 +10812,57 @@ th.hide-for-touch {
   border-bottom: none;
 }
 
-/* line 106, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 108, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li {
   float: none;
   display: block;
   border-bottom: 1px solid #CCC;
 }
 
-/* line 110, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 112, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li:first-of-type {
   border-top: 1px solid #CCC;
 }
 
-/* line 113, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 115, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li a {
   padding: 5px 10px 5px 10px;
   display: block;
   color: #008CBA;
 }
 
-/* line 117, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 119, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li a:hover {
   color: #008CBA;
 }
 
-/* line 120, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 122, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li a.active {
   background: #FAFAFA;
   color: #000000;
 }
 
-/* line 127, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 129, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li.expanded ul {
   border-color: #CCC;
 }
 
-/* line 130, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 132, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li.expanded ul li a {
   text-indent: 10px;
 }
 
-/* line 137, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 139, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li.expanded ul ul {
   border-color: #CCC;
 }
 
-/* line 140, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 142, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .sidebar .block-menu-block ul.menu li.expanded ul ul li a {
   text-indent: 20px;
 }
 
-/* line 159, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 161, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu {
   font-weight: 400;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
@@ -10869,14 +10872,14 @@ th.hide-for-touch {
   border-bottom: none;
 }
 
-/* line 166, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 168, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li {
   padding: 0;
   display: block;
   margin-bottom: 4px;
 }
 
-/* line 170, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 172, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li a {
   padding: 0;
   display: block;
@@ -10884,19 +10887,19 @@ th.hide-for-touch {
   color: #FFF;
 }
 
-/* line 175, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 177, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li a:hover {
   color: white;
   text-decoration: underline;
 }
 
-/* line 179, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 181, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li a.active {
   color: #FFF;
   font-weight: bold;
 }
 
-/* line 185, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 187, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li span {
   padding: 0;
   display: block;
@@ -10905,40 +10908,40 @@ th.hide-for-touch {
   font-weight: 900;
 }
 
-/* line 195, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 197, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li.expanded ul {
   border-color: #CCC;
 }
 
-/* line 197, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 199, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li.expanded ul li {
   padding: 0;
   margin: 0 0 5px 0;
 }
 
-/* line 200, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 202, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li.expanded ul li a {
   padding: 0;
   text-indent: 0;
 }
 
-/* line 208, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 210, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .region-footer .block-menu-block ul.menu li.expanded ul ul {
   border-color: #CCC;
 }
 
-/* line 225, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 227, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .dropdown ul.menu {
   z-index: 100;
   position: relative;
 }
 
-/* line 228, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 230, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .dropdown ul.menu li {
   position: relative;
 }
 
-/* line 231, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 233, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .dropdown ul.menu li ul {
   width: 180px;
   visibility: hidden;
@@ -10948,26 +10951,26 @@ th.hide-for-touch {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  /* line 231, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+  /* line 233, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
   .dropdown ul.menu li ul {
     top: 63px;
   }
 }
 
-/* line 240, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 242, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .dropdown ul.menu li ul li {
   float: none !important;
   display: block;
 }
 
-/* line 243, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 245, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .dropdown ul.menu li ul li a {
   border-right: none;
   float: none;
   display: block;
 }
 
-/* line 249, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
+/* line 251, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-menu-block.scss */
 .dropdown ul.menu li ul li ul {
   left: 100%;
   top: 0;
@@ -11532,6 +11535,63 @@ div.mc-image {
     bottom: 20px;
     left: 20px;
   }
+}
+
+/* line 3, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/blocks/_block-views-team.scss */
+.block-views-team-block {
+  margin: 0 -0.9375rem;
+  max-width: none;
+  width: auto;
+}
+
+/* line 239, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+.block-views-team-block:before, .block-views-team-block:after {
+  content: " ";
+  display: table;
+}
+
+/* line 240, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/foundation/components/_global.scss */
+.block-views-team-block:after {
+  clear: both;
+}
+
+/* line 1, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/node/_node-team-view-mode-card.scss */
+.node-team.view-mode-card {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 25%;
+  float: left;
+}
+
+/* line 4, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/node/_node-team-view-mode-card.scss */
+.node-team.view-mode-card .group-top .field-name-title {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+/* line 8, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/node/_node-team-view-mode-card.scss */
+.node-team.view-mode-card .group-top .field-name-title h1, .node-team.view-mode-card .group-top .field-name-title h2 {
+  color: #FFF;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 17, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/node/_node-team-view-mode-card.scss */
+.node-team.view-mode-card .group-middle {
+  padding: 20px;
+}
+
+/* line 20, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/node/_node-team-view-mode-card.scss */
+.node-team.view-mode-card .group-bottom {
+  border-top: 1px solid #EAEAEA;
+  padding: 20px;
+}
+
+/* line 24, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/node/_node-team-view-mode-card.scss */
+.node-team.view-mode-card .field-name-node-link {
+  float: right;
 }
 
 /* line 31, /Applications/MAMP/htdocs/zurbfeaturebuilder/sites/all/themes/zurbfeaturebuilder/scss/breakpoints.scss */

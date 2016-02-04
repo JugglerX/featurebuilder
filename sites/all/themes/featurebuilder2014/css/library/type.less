@@ -1,0 +1,188 @@
+/* ==========================================================================
+   Paragraph
+   ========================================================================== */
+p { 
+	color: @basefontcolor;
+	font-family: @basefont; 
+	font-size: @basefontsize; 
+	line-height: @baselineheight; 
+	margin: 0 0 20px 0; 
+}
+.field-name-body {
+	img {
+		.img-normal();
+	}
+	@media @mobile {
+		img {
+			.img-responsive();
+		}
+	}
+}
+
+img {
+  .img-responsive();
+  vertical-align: bottom;
+}
+a img {
+  .img-glow();
+}
+
+
+/* ==========================================================================
+   Content Headings
+   ========================================================================== */
+h1, .h1	{ 
+	font-family: @customfont; 
+	font-size: 48px; 
+	line-height: 62px; 
+	font-weight: 300; 
+	color: @customfontcolor; 
+	padding: 0; 
+	margin: 0 0 20px 0; 
+}
+
+h2, .h2	{ 
+	font-family: @customfont; 
+	font-size: 22px;
+	line-height: 28px; 
+	font-weight: 300; 
+	color: @customfontcolor; 
+	padding: 0; 
+	margin: 0 0 10px 0; 
+}
+h3, .h3	{ 
+	font-family: @customfont; 
+	font-size: 22px;
+	line-height: 30px; 
+	font-weight: 400; 
+	color: @customfontcolor; 
+	padding: 0; 
+	margin: 0; 
+}
+h4, .h4	{ 
+	font-family: @customfont; 
+	font-size: 18px;
+	line-height: 26px; 
+	font-weight: 400; 
+	color: @customfontcolor; 
+	padding: 0; 
+	margin: 0; 
+}
+h5, .h5	{ 
+	font-family: @customfont; 
+	font-size: 16px;
+	line-height: 22px; 
+	font-weight: 400; 
+	color: @customfontcolor; 
+	padding: 0; 
+	margin: 0; 
+}
+h6, .h6	{ 
+	font-family: @customfont; 
+	font-size: 14px;
+	line-height: 20px; 
+	font-weight: 700; 
+	color: @customfontcolor; 
+	padding: 0; 
+	margin: 0; 
+}
+/* ==========================================================================
+   Block Title Headings
+   ========================================================================== */
+h2.block-title {
+    .h2();
+    margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   View Title Heading
+   ========================================================================== */
+.view-header h2 {
+    .h2();
+    margin-bottom: 15px;
+}
+
+
+/* ==========================================================================
+   Node Title Headings
+   ========================================================================== */
+.field-name-title {
+	h1 {
+		.h1();
+	}
+	h2 {
+		.h2();
+	}
+	h3 {
+		.h3();
+	}
+	h4 {
+		.h4();
+	}
+	h5 {
+		.h5();
+	}
+	h6 {
+		.h6();
+	}
+}
+
+/* Global Links */
+a 						{ text-decoration: none; color: darken(@linkcolor, 3%); }
+a:hover 				{ text-decoration: underline; color: @linkcolorhover; }
+
+
+
+// List
+ul	 					{ margin: 0; padding: 0; list-style: none; }
+ol 						{ margin: 0; padding: 0; list-style: none; }
+
+// Emphasis
+strong 					{ font-weight: bold; }
+em 						{ font-style: italic; }
+
+// Blockquote
+blockquote, .blockquote  {
+	margin: 0 0 30px 0;
+	padding: 20px;
+	//float: right;
+	//width: 300px;
+	background: lighten(@primarycolor,45%);
+	color: @primarycolor;
+	font-size: 18px;
+	line-height: 26px;
+	font-weight: 200;
+	font-style: normal;
+	//border-left: 4px solid lighten(@primarycolor,40%);
+	p {
+		margin: 0;
+		padding: 0;
+		color: @primarycolor;
+		font-size: 18px;
+		line-height: 24px;
+		font-weight: 200;
+		font-style: normal;
+		em {
+			font-style: normal;
+		}
+		&:first-of-type {
+			font-size: inherit;
+			line-height: inherit;
+			font-weight: inherit;
+		}
+	}
+}
+
+
+
+
+
+// HR
+hr 						{ border: 0; border-bottom: 3px solid @primarycolor; display: block; margin-bottom: 20px; margin-top: 20px;}
+
+.field-name-body, .field-type-text-with-summary {
+	ul	 				{ color: #666; margin: 10px 0 30px 0; list-style: disc; }
+	ol 					{ color: #666; margin: 0 0 20px 0; list-style: decimal; }
+	li 					{ color: #444; margin: 0 0 7px 20px; list-style-type: disc; list-style-position: inside; padding: 0;}
+}
+

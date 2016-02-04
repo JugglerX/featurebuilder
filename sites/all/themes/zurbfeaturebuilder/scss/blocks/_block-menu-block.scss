@@ -2,7 +2,10 @@
 //  ==========================================================================
 .block-menu-block {
   ul.menu {
-    font-weight: 700;
+    @include clearfix;
+    background: #FFF;
+    margin: 0;
+    font-weight: 500;
     font-family: $body-font-family;
     font-size: 14px;
     line-height: 18px;
@@ -16,13 +19,12 @@
       text-transform: uppercase;
       height: 30px;
       line-height: 2.2;
-      // vertical-align: middle;
       &:first-child a{
         padding-left: 0;
       }
       a {
         // remember to change the padding on span (special menu items to match this)
-        // padding: 10px 18px;
+        padding: 5px 14px;
         display: block;
         background: none;
         color: $primary-color;
@@ -41,7 +43,7 @@
       }
       // Special Menu Items
       span {
-        padding: 10px 18px;
+        padding: 5px 14px;
         display: block;
         background: none;
         color: $primary-color;

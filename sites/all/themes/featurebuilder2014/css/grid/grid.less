@@ -1,0 +1,266 @@
+/* ==========================================================================
+   Desktop XL Grid Variables
+   ========================================================================== */
+@desktopxl-column-width: 76px;
+@desktopxl-columns: 12;
+@desktopxl-gutter: 14px;
+@desktopxl-column-fullwidth: (@columns * @desktopxl-column-width) - (@desktopxl-gutter) * 1px;
+
+
+/* ==========================================================================
+   Grid Variables
+   ========================================================================== */
+@column-width: 76px;
+@columns: 12;
+@gutter: 14px;
+@column-fullwidth: (@columns * @column-width) + (@columns * @gutter) - (@gutter)  * 1px;
+@column-size: (@column-width + @gutter);
+
+/* ==========================================================================
+   Ipad Grid Variables
+   ========================================================================== */
+@ipad-column-width: 50px;
+@ipad-columns: 12;
+@ipad-gutter: 12px;
+@ipad-column-fullwidth: (@columns * @ipad-column-width) * 1px;
+
+
+/* ==========================================================================
+   Mobile Grid Variables
+   ========================================================================== */
+@mobile-gutter: 14px;
+
+.clearfix {
+    &:after {
+      content:"";
+      display:table;
+      clear:both;
+    }
+}
+
+.reset {
+    margin: 0; 
+    padding: 0; 
+    width: auto;
+    height: auto;
+    display: block;
+    float: none;
+    width: auto;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+  
+.container() {
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  @media @desktop-xl {
+    width: (@columns * @desktopxl-column-width) + (@columns * @desktopxl-gutter) - (@desktopxl-gutter)  * 1px;
+  }
+  @media @desktop {
+    width: (@columns * @column-width) + (@columns * @gutter) - @gutter * 1px;
+  }
+  @media @ipad {
+    width: (@columns * @ipad-column-width) + (@columns * @ipad-gutter) - @ipad-gutter * 1px;
+  }
+}
+
+.container-oversized {
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  @media @desktop-xl {
+    width: ((@columns + 2) * @desktopxl-column-width) + ((@columns) * @desktopxl-gutter) - (@desktopxl-gutter)  * 1px;
+  }
+  @media @desktop {
+    width: ((@columns + 2) * @column-width) + ((@columns + 2) * @gutter) - @gutter * 1px;
+  }
+  @media @ipad {
+    width: (@columns * @ipad-column-width) + (@columns * @ipad-gutter) - @ipad-gutter * 1px;
+  }
+}
+
+.grid-container() {
+  position: relative;
+    @media @desktop-xl {
+      margin-left: @desktopxl-gutter * -1px;
+      float: none;
+      display: block;
+      clear: both;
+      width: auto;
+      .clearfix();
+    }
+    @media @desktop {
+      margin-left: @gutter * -1px;
+      float: none;
+      display: block;
+      clear: both;
+      width: auto;
+      .clearfix();
+    }
+    @media @ipad {
+      margin-left: @ipad-gutter * -1px;
+      float: none;
+      display: block;
+      clear: both;
+      width: auto;
+      .clearfix();
+    }
+     @media @mobile {
+      .reset();
+  }
+}
+
+.grid() {
+    @media @desktop-xl {
+      margin-left: @desktopxl-gutter * 1px;
+      position: relative;
+    }
+    @media @desktop {
+      margin-left: @gutter * 1px;
+      position: relative;
+    }
+    @media @ipad {
+      margin-left: @ipad-gutter * 1px;
+      position: relative;
+    }
+    @media @mobile {
+      width: auto;
+      display: block;
+      float: none;
+      position: relative;
+      height: auto;
+      margin: 0 auto;
+    }  
+}
+
+.grid(@column;@column-padding:0;) {
+    box-sizing: border-box;
+    @media @desktop-xl {
+      width: (@column * @desktopxl-column-width) + (@column * @desktopxl-gutter) - (@column-padding) - (@desktopxl-gutter)  * 1px;
+      display: inline-block;
+      float: left;
+      margin-left: @desktopxl-gutter * 1px;
+      position: relative;
+    }
+    @media @desktop {
+      width: (@column * @column-width) + (@column * @gutter) - (@gutter)  * 1px;
+      display: inline-block;
+      float: left;
+      margin-left: @gutter * 1px;
+      position: relative;
+    }
+    @media @ipad {
+      width: (@column * @ipad-column-width) + (@column * @ipad-gutter) - (@ipad-gutter) * 1px;
+      display: inline-block;
+      float: left;
+      margin-left: @ipad-gutter * 1px;
+      position: relative;
+    }
+    @media @mobile {
+      width: auto;
+      display: block;
+      float: none;
+      position: relative;
+    }  
+}
+
+.grid-width(@column) {
+    @media @desktop-xl {
+      width: (@column * @desktopxl-column-width) + (@column * @desktopxl-gutter) - (@desktopxl-gutter)  * 1px;
+    }
+    @media @desktop {
+      width: (@column * @column-width) + (@column * @gutter) - (@gutter)  * 1px;
+    }
+    @media @ipad {
+      width: (@column * @ipad-column-width) + (@column * @ipad-gutter) - (@ipad-gutter) * 1px;
+    }
+}
+
+.grid-ipad(@column;@column-padding:0;) {
+    box-sizing: border-box;
+    @media @ipad {
+      width: (@column * @ipad-column-width) + (@column * @ipad-gutter) - (@ipad-gutter) * 1px;
+      display: inline-block;
+      float: left;
+      margin-left: @ipad-gutter * 1px;
+      position: relative;
+    }
+}
+
+.grid-ipad-width(@column) {
+    @media @ipad {
+      width: (@column * @ipad-column-width) + (@column * @ipad-gutter) - (@ipad-gutter) * 1px;
+    }
+}
+
+.padding() {
+    @media @desktop-xl {
+      padding: round((@desktopxl-gutter * .66)) * 1px;  
+    }
+    @media @desktop {
+      padding: @gutter * 1px;
+    }
+    @media @ipad {
+     padding: @ipad-gutter * 1px;
+    }
+    @media @mobile {
+      padding: @mobile-gutter * 1px;
+    }  
+}
+
+.node {
+    @media @desktop-xl {
+      margin-bottom: @desktopxl-gutter * 1px;
+    }
+    @media @desktop {
+      margin-bottom: @gutter * 1px;
+    }
+    @media @ipad {
+      margin-bottom: @ipad-gutter * 1px;
+    }
+    @media @mobile {
+      margin: 0 auto;
+      margin-bottom: @mobile-gutter;
+    }  
+}
+
+
+.float-left {
+   @media @desktop-xl {
+      float: left !important;
+    }
+    @media @desktop {
+      float: left !important;
+    }
+    @media @ipad {
+      float: left !important;
+    }
+    @media @mobile {
+      float: left;
+    }  
+}
+
+
+.float-right {
+   @media @desktop-xl {
+      float: right !important;
+    }
+    @media @desktop {
+      float: right !important;
+    }
+    @media @ipad {
+      float: right !important;
+    }
+    @media @mobile {
+      float: right;
+    }  
+}
+
+
+

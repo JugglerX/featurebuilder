@@ -1,0 +1,89 @@
+/* 
+   Top
+   ========================================================================== */
+.layout-top { 
+    background-color: #FFF; 
+    border-bottom: 1px solid #EAEAEA;
+    height: 36px;
+    @media @mobile {
+        .reset();
+    }
+}	
+
+.layout-header { 
+    background-color: #FFF; 
+    padding: 10px 0 10px 0;
+    border-bottom: 1px solid #EAEAEA;
+    @media @mobile {
+    	background: @primarycolor;
+    	border-bottom: none;
+    }
+}	
+
+.layout-subheader {
+	 border-bottom: 1px solid #EAEAEA;
+}
+
+@canyon: @gutter * 3px;
+
+.layout-middle {
+  margin-top: @canyon;
+  margin-bottom: @canyon;
+  @media @mobile {
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+}
+
+.layout-footer {
+    background: #333;
+    padding-top: @canyon;
+    padding-bottom: @canyon;
+    @media @mobile {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.layout-canyon {
+    background: #EAEAEA;
+    padding-top: @canyon;
+    padding-bottom: @canyon;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    @media @mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .view-content {
+        .grid-container();
+    }
+}
+
+.region-footer {
+  h2.block-title {
+    color: #FFF;
+  }
+}
+
+
+.layout-triptych-third {
+    background: #CCC;
+    padding-top: @canyon;
+    padding-bottom: @canyon;
+    @media @mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.layout-triptych-fourth {
+    border-top: 2px solid #EAEAEA;
+    padding-top: @canyon;
+    padding-bottom: @canyon;
+    @media @mobile {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+

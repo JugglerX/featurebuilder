@@ -1,0 +1,46 @@
+/*
+.layout-header {
+	background-color: @primary-500;
+	border: none;
+}
+
+.layout-top {
+	background-color: @primary-700;
+	border: none;
+}
+*/
+.region-top .block-menu-block ul.menu,
+.region-header .block-menu-block ul.menu,
+.region-subheader .block-menu-block ul.menu {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.region-top .block-menu-block ul.menu li a,
+.region-header .block-menu-block ul.menu li a,
+.region-subheader .block-menu-block ul.menu li a {
+  padding: 15px;
+  display: block;
+  background: none;
+  color: #303f9f;
+}
+.region-top .block-menu-block ul.menu li a:hover,
+.region-header .block-menu-block ul.menu li a:hover,
+.region-subheader .block-menu-block ul.menu li a:hover {
+  color: #303f9f;
+  text-decoration: underline;
+}
+.region-top .block-menu-block ul.menu li a.active,
+.region-header .block-menu-block ul.menu li a.active,
+.region-subheader .block-menu-block ul.menu li a.active {
+  color: #303f9f;
+  text-decoration: underline;
+}
+.region-top .block-menu-block ul.menu li span,
+.region-header .block-menu-block ul.menu li span,
+.region-subheader .block-menu-block ul.menu li span {
+  padding: 15px;
+  display: block;
+  background: none;
+  color: #303f9f;
+  cursor: context-menu;
+}

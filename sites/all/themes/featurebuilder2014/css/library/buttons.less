@@ -1,0 +1,117 @@
+// Button
+// --------------------------------------------------
+.btn {
+  background: #CCC;
+  display: inline-block;
+  padding: 4px 10px 4px;
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: normal;
+  color: #333;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: none;
+  .transition(background,.15s,linear);
+  &:hover {
+    color: #333;
+    text-decoration: none;
+    background-color: darken(#CCC, 10%);
+    .transition(background .15s linear);
+  }
+}
+
+// Button Sizes
+// --------------------------------------------------
+
+// Small
+.btn-small {
+  padding: 6px 13px;
+  font-size: 12px;
+}
+
+
+// Normal
+.btn-normal {
+  padding: 13px 20px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+// Large
+.btn-large {
+  padding: 16px 28px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+// Full-Width
+.btn-full {
+  padding: 13px 24px;
+  font-size: 14px;
+  display: block;
+}
+.btn-minimal {
+  padding: 13px 24px;
+  font-size: 14px;
+  text-transform: uppercase;
+  background: none;
+  color: @secondarycolor;
+  font-weight: 700;
+}
+
+
+// Button Colours
+// --------------------------------------------------
+.btn-primary {
+  background-color: @primarycolor;
+  color: #FFF;
+  &:hover {
+    background-color: lighten(@primarycolor, 10%);
+    color: #FFF;
+  }
+}
+
+.btn-secondary {
+  background-color: @secondarycolor;
+  color: #FFF;
+  &:hover {
+    background-color: lighten(@secondarycolor, 10%);
+    color: #FFF;
+  }
+}
+
+
+// Form Buttons
+// --------------------------------------------------
+input.form-submit {
+      .btn();
+      .btn-primary();
+}
+input.form-submit.disabled {
+  cursor: default;
+  color: #666;
+  background-color: #EAEAEA;
+}
+
+input[value="Remove"]         { .btn-small(); } 
+input[value="Update cart"]    {  margin: 0 10px 0 0; }
+input[value="Checkout"]       {  }
+input[value="Buy Cushions"]   {  }
+input[value="Cancel"]         { margin: 0 10px 0 0; }
+input[value="Review order"]   {  }
+input[value="Back"]           {  margin: 0 10px 0 0; }
+input[value="Submit order"]   {  }
+
+
+/* ==========================================================================
+   Read More (Smart Trim Module)
+   ========================================================================== */
+.field-name-node-link {
+  a {
+      .btn(); 
+      .btn-large(); 
+      .btn-primary();
+    }
+}
+
