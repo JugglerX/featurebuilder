@@ -2,8 +2,6 @@
 	@include grid-column(4);
 	$iconsize: 24px;
 	@include clearfix();
-	margin: 10px 0 0 0;
-	text-align: center;
 	ul {
 		margin: 0;
 		padding: 0;

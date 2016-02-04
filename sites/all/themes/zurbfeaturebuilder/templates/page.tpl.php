@@ -12,11 +12,7 @@
   <?php if ($page['header']): ?>
     <div class="layout-header layout">
       <div class="row">
-        <div class="medium-12 column">
-          <div class="row">
-            <?php print render($page['header']); ?>
-          </div>
-        </div>
+        <?php print render($page['header']); ?>
       </div>
     </div>
   <?php endif; ?>
@@ -103,10 +99,7 @@
   <?php if ($page['footer']): ?>
     <div class="layout-footer layout">
       <div class="row">
-        <div class="medium-12 column">
-
-          <?php print render($page['footer']); ?>
-        </div>
+        <?php print render($page['footer']); ?>
       </div>
     </div>
   <?php endif; ?>

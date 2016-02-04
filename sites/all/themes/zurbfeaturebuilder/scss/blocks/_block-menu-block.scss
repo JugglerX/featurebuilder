@@ -1,6 +1,7 @@
 //  Menu Block - Header
 //  ==========================================================================
-.block-menu-block {
+.layout-header .block-menu-block {
+  @include grid-column(9);
   ul.menu {
     @include clearfix;
     background: #FFF;
@@ -156,8 +157,8 @@
 
 // Menu Block - Sidebar First
 //---------------------------------------------------------------------------------------------------
-
-.region-footer .block-menu-block {
+.layout-footer .block-menu-block {
+  @include grid-column(4);
   ul.menu {
     font-weight: 400;
     font-family: $body-font-family;
