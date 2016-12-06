@@ -113,27 +113,14 @@ module.exports = function (grunt) {
       },
     },
 
-    sassFormat: {
+    prettysass: {
       options: {
-        indentChar: '\t',
-        indentStep: 1,
-        indent: true,
-        blankLine: {
-          property: true,
-          close: true
-        },
-        whiteSpace: {
-          selector: true,
-          property: true
-        },
-        order: true,
-        lang: 'en',
-        debug: false
+        alphabetize: true
       },
-      files: {
-        src: ['path/to/target/files']
-      }
-    }
+      app: {
+        src: ['scss/**/*.scss']
+      },
+    },
 
   });
 
