@@ -1,0 +1,58 @@
+//@import "functions";
+
+@import "reset";
+@import "settings";
+
+@import "grid/breakpoints";
+@import "grid/grid";
+
+@import "mixins";
+
+@import 'typography/fonts';
+@import 'typography/type';
+
+// Deck
+@import "deck/menu-responsive-meanmenu";
+@import "deck/menu-responsive-simple";
+
+// Layout
+@import "layout/layout";
+@import "layout/views";
+
+// Blocks
+@import "blocks/block-blockify-logo";
+@import "blocks/block-va-social";
+@import "blocks/block-views-contact";
+@import "blocks/block-menu-block";
+@import "blocks/block-views-homepage-slider";
+@import "blocks/block-views-hero-slideshow";
+@import "blocks/block-views-team";
+@import "blocks/block-views-services-block-1";
+
+// Node
+@import "node/node-team-view-mode-card";
+
+// Font
+@import url(http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700|Roboto:400,700);
+
+
+// Body
+body {
+   margin: 0;
+   padding: 0;
+   color: #333;
+   font-family: $base-font;
+   font-size: $base-font-size;
+   line-height: $base-line-height;
+   -webkit-font-smoothing: antialiased;
+   letter-spacing: .1px;
+}
+
+body {
+   @include display-breakpoint;
+}
+
+* {
+   box-sizing: border-box;
+}
+

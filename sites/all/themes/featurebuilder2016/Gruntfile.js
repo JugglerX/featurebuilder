@@ -1,37 +1,15 @@
-
-  module.exports = function(grunt) {
+module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
   require('time-grunt')(grunt);
 
-  // array of javascript libraries to include.
-  var jsLibs = [
-    
-  ];
-
-  // array of foundation javascript components to include.
-  var jsFoundation = [
-    'js/foundation/foundation.js',
-    'js/foundation/foundation.abide.js',
-    'js/foundation/foundation.accordion.js',
-    'js/foundation/foundation.alert.js',
-    'js/foundation/foundation.clearing.js',
-    'js/foundation/foundation.dropdown.js',
-    'js/foundation/foundation.equalizer.js',
-    'js/foundation/foundation.interchange.js',
-    'js/foundation/foundation.joyride.js',
-    'js/foundation/foundation.magellan.js',
-    'js/foundation/foundation.offcanvas.js',
-    'js/foundation/foundation.orbit.js',
-    'js/foundation/foundation.reveal.js',
-    'js/foundation/foundation.slider.js',
-    'js/foundation/foundation.tab.js',
-    'js/foundation/foundation.tooltip.js',
-    'js/foundation/foundation.topbar.js'
-  ];
-
-  // array of custom javascript files to include.
   var jsApp = [
-    'js/scripts.js',
+    "js/scripts.js"
+  ];
+
+  var jsLibs = [
+    "js/vendor/owl.carousel.min.js",
+    "js/vendor/custom.modernizr.js",
+    "js/vendor/detectizr.min.js"
   ];
 
   grunt.initConfig({
@@ -39,20 +17,18 @@
 
     sass: {
       options: {
-          outputStyle: 'expanded',
-          sourceComments: true,
-          sourceMap: false,
+        sourceComments: false,
+        sourceMap: true,
+        outputStyle: 'expanded'
       },
-      dist: {
-        files: { 'css/style.css': 'css/style.scss'}
-      },
+      style: {
+        files: {
+          'css/style.css': 'scss/style.scss'
+        }
+      }
     },
 
     jshint: {
-      options: {
-        // jshintrc: '.jshintrc',
-        force: true
-      },
       all: [
         'Gruntfile.js',
         jsApp
@@ -60,47 +36,108 @@
     },
 
     uglify: {
-      options: {
-        sourceMap: false,
-        compress: false,
-        beautify: false,
-        preserveComments: 'all',
-        mangle: false
-      },
       dist: {
+        options: {
+          sourceMap: true,
+          preserveComments: 'none'
+        },
         files: {
-          'js/libs.min.js': [jsLibs],
-          'js/foundation.min.js': [jsFoundation],
-          'js/scripts.min.js': [jsApp]
+          'js/libs.min.js': [jsLibs], 
+          'js/app.min.js': [jsApp], 
         }
       }
     },
 
     watch: {
-      grunt: { files: ['Gruntfile.js'] },
       js: {
         files: [
           jsLibs,
-          jsFoundation,
-          '<%= jshint.all %>'
+          'Gruntfile.js'
         ],
-        tasks: ['jshint', 'uglify']
+        tasks: ['uglify']
       },
       scss: {
-        files: 'css/**/*.scss',
-        tasks: ['sass:dist'],
+        files: 'scss/**/*.scss',
+        tasks: ['sass:style']
+      }
+    },
+
+    autoprefixer: {
+      options: {
+        browsers: ['Last 2 versions', 'IE 10', 'IE 11'],
+        cascade: false,
+        remove: false,
+        map: false
       },
       css: {
-        files: 'css/*.css',
-        options: {
-          livereload: true
+        src: 'css/autodesk.css'
+      }
+    },
+
+    bless: {
+      css: {
+        options: {},
+        files: {
+          'blessed/autodesk.css': 'css/autodesk.css'
         }
       }
+    },
+
+    cssmetrics: {
+      dev: {
+        src: [
+          'css/style.css'
+        ]
+      }
+    },
+
+    removescsscomments: {
+      your_target: {
+        options: {
+          singleline: true,
+          multiline: true
+        },
+        src: ['scss/**/*.scss']
+      }
+    },
+
+    scsslint: {
+      allFiles: [
+        'scss/*.scss',
+      ],
+      options: {
+        bundleExec: false,
+        config: '.scss-lint.yml',
+        reporterOutput: 'scss-lint-report.xml',
+        colorizeOutput: true
+      },
+    },
+
+    sassFormat: {
+      options: {
+        indentChar: '\t',
+        indentStep: 1,
+        indent: true,
+        blankLine: {
+          property: true,
+          close: true
+        },
+        whiteSpace: {
+          selector: true,
+          property: true
+        },
+        order: true,
+        lang: 'en',
+        debug: false
+      },
+      files: {
+        src: ['path/to/target/files']
+      }
     }
-    
+
   });
 
-  grunt.registerTask('build', ['sass','jshint','uglify']);
+  grunt.registerTask('build', ['sass', 'autoprefixer', 'jshint', 'uglify']);
   grunt.registerTask('default', ['build']);
 
 };
