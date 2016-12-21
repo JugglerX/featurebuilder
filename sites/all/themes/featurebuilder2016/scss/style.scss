@@ -1,5 +1,3 @@
-//@import "functions";
-
 @import "reset";
 @import "settings";
 
@@ -35,6 +33,8 @@
 // Font
 @import url(http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,700|Roboto:400,700);
 
+// Modules
+@import "modules/pattern";
 
 // Body
 body {

@@ -1,7 +1,0 @@
-name = VA Ubercart Utilities
-description =  VA Ubercart Utilities
-core = 7.x
-files[] = va_cart_utilities.module
-package = "VA"
-
-dependencies[] = uc_cart

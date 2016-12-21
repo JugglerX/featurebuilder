@@ -4,12 +4,10 @@ package = Core
 version = VERSION
 core = 7.x
 
-
 stylesheets[all][] = css/style.css
 
-scripts[] = js/custom.js
-scripts[] = js/dropdown.js
-scripts[] = js/hoverIntent.js
+scripts[] = js/libs.min.js
+scripts[] = js/app.min.js
 
 regions[top] = Top
 regions[header] = Header

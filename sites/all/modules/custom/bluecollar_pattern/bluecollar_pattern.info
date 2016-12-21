@@ -1,0 +1,6 @@
+name = Bluecollar Pattern Library
+description = Styleguide for Bluecollar Theme
+core = 7.x
+version = "7.x-1.0"
+
+scripts[] = js/prism.js

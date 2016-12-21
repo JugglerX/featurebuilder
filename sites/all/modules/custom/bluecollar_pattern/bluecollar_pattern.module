@@ -1,0 +1,169 @@
+<?php
+function bluecollar_pattern_menu() {
+
+    $items = array();
+
+    $items['pattern'] = array(
+      'title' => 'Pattern Library',
+      'page callback' => 'bluecollar_pattern_render_index',
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK
+    );
+
+    $items['pattern/cards'] = array(
+      'title' => 'bluecollar Pattern Library',
+      'page callback' => 'bluecollar_pattern_render_cards',
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK
+    );
+
+    $items['pattern/%'] = array(
+      'title' => 'bluecollar Pattern Library',
+      'page callback' => 'bluecollar_pattern_render_page',
+      'page arguments' => array(1),
+      'access callback' => TRUE,
+      'type' => MENU_CALLBACK
+    );
+    return $items;
+}
+
+function bluecollar_pattern_render_page($args) {
+  return theme( $args , array());
+}
+function bluecollar_pattern_render_index() {
+  return theme( 'index' , array());
+}
+
+function bluecollar_pattern_render_cards() {
+  $file = file_get_contents("sites/all/modules/custom/bluecollar_pattern/data/cards.json");
+  $content = json_decode($file, true);
+   return theme('cards', array(
+    'data' => $content
+  ));
+}
+
+/**
+ * Implements hook_theme().
+ */
+function bluecollar_pattern_theme( $existing, $type, $theme, $path ) {
+    return array(
+      'index' => array(
+        'template' => 'index',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'cards' => array(
+        'template' => 'cards',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'grid' => array(
+        'template' => 'grid',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'breakpoints' => array(
+        'template' => 'breakpoints',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'buttons' => array(
+        'template' => 'buttons',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'type' => array(
+        'template' => 'type',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'posters' => array(
+        'template' => 'posters',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'forms' => array(
+        'template' => 'forms',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'hero' => array(
+        'template' => 'hero',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'panels' => array(
+        'template' => 'panels',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+
+      'tabs' => array(
+        'template' => 'tabs',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'eyebrow' => array(
+        'template' => 'eyebrow',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'modal' => array(
+        'template' => 'modal',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'tables' => array(
+        'template' => 'tables',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'breadcrumbs' => array(
+        'template' => 'breadcrumbs',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'pagination' => array(
+        'template' => 'pagination',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'sidenav' => array(
+        'template' => 'sidenav',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'sidebar-blocks' => array(
+        'template' => 'sidebar-blocks',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'show-hide' => array(
+        'template' => 'show-hide',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'equalizer' => array(
+        'template' => 'equalizer',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'enquire' => array(
+        'template' => 'enquire',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'reference' => array(
+        'template' => 'reference',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'popover' => array(
+        'template' => 'popover',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'tooltip' => array(
+        'template' => 'tooltip',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'reference' => array(
+        'template' => 'reference',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'layout' => array(
+        'template' => 'layout',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'truncation' => array(
+        'template' => 'truncation',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'owlcarousel' => array(
+        'template' => 'owlcarousel',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      ),
+      'zoom' => array(
+        'template' => 'zoom',
+        'path' => drupal_get_path( 'module', 'bluecollar_pattern' ) . '/templates'
+      )
+
+    );
+}

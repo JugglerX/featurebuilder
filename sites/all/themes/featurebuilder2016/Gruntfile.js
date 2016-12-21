@@ -3,13 +3,27 @@ module.exports = function (grunt) {
   require('time-grunt')(grunt);
 
   var jsApp = [
-    "js/scripts.js"
+    "js/app/*.js",
   ];
 
   var jsLibs = [
-    "js/vendor/owl.carousel.min.js",
     "js/vendor/custom.modernizr.js",
-    "js/vendor/detectizr.min.js"
+    "js/vendor/detectizr.min.js",
+    "js/vendor/enquire.min.js",
+    "js/vendor/fastclick.js",
+    "js/vendor/foundation.min.js",
+    "js/vendor/highlight.pack.js",
+    "js/vendor/hoverIntent.js",
+    "js/vendor/jquery.fitvids.js",
+    "js/vendor/jquery.smoothanchors.js",
+    "js/vendor/js-cookie.min.js",
+    "js/vendor/loglevel.min.js",
+    "js/vendor/masonry.min.js",
+    "js/vendor/matchMedia.addListener.js",
+    "js/vendor/matchMedia.js",
+    "js/vendor/owl.carousel.min.js",
+    "js/vendor/toastr.js",
+    "js/vendor/tooltipster.bundle.min.js",
   ];
 
   grunt.initConfig({
@@ -112,16 +126,6 @@ module.exports = function (grunt) {
         colorizeOutput: true
       },
     },
-
-    prettysass: {
-      options: {
-        alphabetize: true
-      },
-      app: {
-        src: ['scss/**/*.scss']
-      },
-    },
-
   });
 
   grunt.registerTask('build', ['sass', 'autoprefixer', 'jshint', 'uglify']);
