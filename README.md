@@ -1,2 +1,2 @@
-# zurbfeaturebuilder
-Drupal 7 Zurb Foundation + Feature Builder
+# featurebuilder
+Drupal 7 Feature Builder
