@@ -7,3 +7,4 @@ sites/*/private
 node_modules
 .editorconfig
 .idea/*
+.idea
